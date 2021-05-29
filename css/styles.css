@@ -24,8 +24,13 @@ body {
 .list {
   list-style: none;
 }
-
 /* Шапка профиля */
+
+.conteiner {
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 1170px;
+}
 .logo {
   color: var(--primary-text-color);
   font-family: Raleway, sans-serif;
