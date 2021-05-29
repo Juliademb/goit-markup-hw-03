@@ -27,11 +27,28 @@ body {
 /* Шапка профиля */
 
 .conteiner {
-  margin-left: 15px;
-  margin-right: 15px;
-  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  width: 294px;
+}
+
+.contacts {
+  display: flex;
 }
 .logo {
+  width: 145px;
+
   color: var(--primary-text-color);
   font-family: Raleway, sans-serif;
 
@@ -72,6 +89,13 @@ body {
 .contacts a:hover,
 .contacts a:focus {
   color: var(--accent-color);
+}
+
+.mail {
+  width: 135px;
+}
+.phone {
+  width: 122px;
 }
 
 /* Секция фильтров */
