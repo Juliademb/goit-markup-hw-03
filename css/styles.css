@@ -12,6 +12,16 @@ body {
 
   font-family: Roboto, sans-serif;
 }
+h1 h2 h3 h4 {
+  margin: 0 auto;
+}
+p {
+  margin: 0 auto;
+}
+ul {
+  margin: 0 auto;
+  padding-left: 0px;
+}
 
 .section-header {
   font-style: normal;
@@ -68,6 +78,9 @@ body {
 }
 
 .site-nav a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -83,6 +96,9 @@ body {
 }
 
 .contacts a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--grey-color);
   font-weight: 500;
   font-size: 14px;
@@ -141,6 +157,8 @@ body {
   background-color: var(--background-color);
 }
 .footer a {
+  margin-bottom: 20px;
+
   color: var(--white-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -150,6 +168,9 @@ body {
   text-decoration: none;
 }
 
+.footer-contacts li:not(:last-child) {
+  margin-bottom: 9px;
+}
 .local-ad {
   font-style: normal;
   font-size: 14px;
@@ -162,6 +183,12 @@ body {
   color: var(--accent-color);
 }
 
+.footer-section {
+  text-align: left;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-contacts a {
   color: var(--white-color);
   font-family: Roboto, sans-serif;
@@ -170,6 +197,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+  font-style: normal;
 }
 
 /* секция HERO */
@@ -214,6 +242,7 @@ body {
 
 .features-list p {
   width: 270px;
+  padding-bottom: 94px;
 
   color: var(--grey-color);
   font-size: 14px;
@@ -223,18 +252,52 @@ body {
 .featured-subtitle {
   width: 270px;
   margin-bottom: 10px;
+  padding-top: 94px;
 
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Чем мы занимаемся */
+
+.images-list {
+  display: flex;
+  margin-top: 50px;
+  padding-left: 0px;
+  padding-bottom: 94px;
+}
+
+.images-list li:not(:last-child) {
+  margin-right: 30px;
+}
+.images-list > img {
+  width: 370px;
+  display: block;
+}
+
 /* Наша команда */
 
 .our-team {
   background-color: var(--second-background);
 }
+.our-team h2 {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.team li:not(:last-child) {
+  margin-right: 30px;
+}
 .team {
+  display: flex;
+  padding-left: 0px;
+  padding-bottom: 94px;
+
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -242,7 +305,18 @@ body {
 }
 .team p {
   color: var(--grey-color);
+  margin-bottom: 30px;
 }
 .team h3 {
   font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.team-cards {
+  display: block;
+  width: 270px;
+  margin-bottom: 30px;
+}
+.team li {
+  background-color: var(--white-color);
 }
