@@ -43,8 +43,9 @@
     <main>
 <!-- <h1>Portfolio</h1> -->
         <section>
-        <h2 class="hidden">Список фильтров </h2>
-            <ul class="list">
+        <div class="conteiner">
+            <h2 class="hidden">Список фильтров </h2>
+            <ul class="list button-item">
                 <li>
                     <button class="button"  type="button">Все</button>
                 </li>
@@ -61,12 +62,14 @@
                     <button class="button"  type="button">Маркетинг</button>
                 </li>
             </ul>
+        </div>
         </section>
 
         <section>
+            <div class="conteiner">
             <!--<h2>Список карточек</h2>-->
-            <ul class="cards list">
-                <li>
+            <ul class="cards list ">
+                <li class="cards-item">
                     <img src="./imades/tehnokriack.jpg" alt="технокряк" width="370">
                     <h3 class="title">Технокряк</h3>
                     <p>Веб-сайт</p>
@@ -112,14 +115,18 @@
                     <p>Приложение</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 
 <footer class="footer">
+    <div class="conteiner footer-section">
     <a href="#"><span class="accent-logo">Web</span>Studio</a>
     <address>
-        <p class="local-ad">г. Киев, пр-т Леси Украинки, 26</p>
         <ul class="footer-contacts list">
+            <li>
+                <p class="local-ad">г. Киев, пр-т Леси Украинки, 26</p>
+            </li>
             <li>
                 <a href="mailto:info@example.com">info@example.com</a>
             </li>
@@ -128,6 +135,7 @@
             </li>
         </ul>
     </address>
+    </div>
 </footer>
 </body>
 
