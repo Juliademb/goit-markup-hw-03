@@ -13,14 +13,17 @@ body {
 
   font-family: Roboto, sans-serif;
 }
-h1 h2 h3 h4 {
-  margin: 0 auto;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 p {
-  margin: 0 auto;
+  margin: 0;
 }
 ul {
-  margin: 0 auto;
+  margin: 0;
   padding-left: 0px;
 }
 
@@ -51,6 +54,9 @@ ul {
 }
 
 .site-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   display: flex;
   width: 294px;
   justify-content: space-between;
@@ -59,6 +65,8 @@ ul {
 }
 
 .contacts {
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: flex;
   justify-content: space-between;
   width: 370px;
@@ -81,9 +89,6 @@ ul {
 }
 
 .site-nav a {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -99,9 +104,6 @@ ul {
 }
 
 .contacts a {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   color: var(--grey-color);
   font-weight: 500;
   font-size: 14px;
@@ -123,6 +125,11 @@ ul {
 }
 
 /* Секция фильтров */
+.filter-section {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
 .hidden {
   display: none;
 }
@@ -152,27 +159,19 @@ ul {
 .button-item li:not(:last-child) {
   margin-right: 8px;
 }
-.button-item li {
-  padding-top: 94px;
-  padding-bottom: 50px;
-}
 
 /* Секция карточек */
-.cards p {
-  margin-right: 24px;
-  margin-left: 24px;
-  margin-bottom: 20px;
-  width: 322px;
 
+.cards-section {
+  padding-bottom: 94px;
+}
+.cards p {
   color: var(--grey-color);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
 .title {
-  margin: 20px 24px 8px 24px;
-  width: 322px;
-
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -180,7 +179,6 @@ ul {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 
 .cards-item img {
@@ -190,7 +188,6 @@ ul {
 }
 
 .cards-item {
-  border: 1px solid #eeeeee;
   margin-right: 30px;
   width: 370px;
 }
@@ -203,7 +200,10 @@ ul {
   margin-bottom: 30px;
 }
 .cards-bottom {
-  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 /*Footer*/
@@ -283,10 +283,11 @@ ul {
 }
 .hero button {
   padding: 10px 32px;
+  border: 0px;
   border-radius: 4px;
 
-  color: var(--primary-text-color);
-  background-color: var(--white-color);
+  color: var(--white-color);
+  background-color: var(--accent-color);
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -297,10 +298,14 @@ ul {
 .hero button:hover,
 .hero button:focus {
   color: var(--white-color);
-  background-color: var(--accent-color);
+  background-color: #188ce8;
 }
 
 /* Секция особенности */
+.features-section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 .features-list {
   display: flex;
   align-items: center;
@@ -308,7 +313,6 @@ ul {
 
 .features-list p {
   width: 270px;
-  padding-bottom: 94px;
 
   color: var(--grey-color);
   font-size: 14px;
@@ -318,7 +322,6 @@ ul {
 .featured-subtitle {
   width: 270px;
   margin-bottom: 10px;
-  padding-top: 94px;
 
   font-size: 14px;
   line-height: 1.14;
@@ -330,12 +333,13 @@ ul {
 }
 
 /* Чем мы занимаемся */
-
+.works-conteiner {
+  padding-bottom: 94px;
+}
 .images-list {
   display: flex;
   margin-top: 50px;
   padding-left: 0px;
-  padding-bottom: 94px;
 }
 
 .images-list li:not(:last-child) {
@@ -351,9 +355,10 @@ ul {
 
 .our-team {
   background-color: var(--second-background);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .our-team h2 {
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -363,7 +368,6 @@ ul {
 .team {
   display: flex;
   padding-left: 0px;
-  padding-bottom: 94px;
 
   font-size: 16px;
   line-height: 1.18;
